@@ -1,0 +1,41 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 425px Phone
+425px - 768px Tablet
+768px - 1440px Desktop
+$breakpoint arguement choices:
+- phone
+- phoneL
+- tablet
+- desktop
+- desktopL
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == phoneL {
+    @media only screen and (min-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 48em) {
+      @content;
+    } //768px
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 62em) {
+      @content;
+    } //992px
+  }
+  @if $breakpoint == desktopL {
+    @media only screen and (min-width: 75em) {
+      @content;
+    } //1200px
+  }
+}
