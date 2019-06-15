@@ -74,10 +74,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
       padding: 0 5rem; } }
   @media only screen and (min-width: 48em) {
     .container {
-      padding: 0 20rem; } }
+      padding: 0 15rem; } }
   @media only screen and (min-width: 62em) {
     .container {
-      padding: 0 50rem; } }
+      padding: 0 20rem; } }
+  @media only screen and (min-width: 75em) {
+    .container {
+      padding: 0 25rem; } }
 
 .profile {
   display: flex;

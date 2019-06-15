@@ -12,10 +12,13 @@
     padding: 0 5rem;
   }
   @include respond(tablet) {
-    padding: 0 20rem;
+    padding: 0 15rem;
   }
   @include respond(desktop) {
-    padding: 0 50rem;
+    padding: 0 20rem;
+  }
+  @include respond(desktopL) {
+    padding: 0 25rem;
   }
 }
 .profile {
