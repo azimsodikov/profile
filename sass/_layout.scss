@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: auto;
-    padding: 0 3rem;
+    padding: 0 7rem;
     text-align: center;
 }
 .profile {
@@ -34,4 +34,6 @@
 .contact {
     font-size: 2rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }

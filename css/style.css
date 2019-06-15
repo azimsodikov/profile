@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  padding: 0 3rem;
+  padding: 0 7rem;
   text-align: center; }
 
 .profile {
@@ -59,19 +59,6 @@ body {
 
 .contact {
   font-size: 2rem;
-  padding: 2rem; }
-
-.logo {
-  height: 3.25rem; }
-
-.search__icon {
-  height: 2rem;
-  width: 2rem; }
-
-.user-nav__icon {
-  height: 2.25rem;
-  width: 2.25rem; }
-
-.user-nav__user-photo {
-  height: 3.75rem;
-  border-radius: 50%; }
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; }
