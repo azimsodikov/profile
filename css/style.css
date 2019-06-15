@@ -1,0 +1,77 @@
+:root {
+  /**
+     * Below are css variables supported natively in the browser
+     */
+  --color-primary: #333399;
+  --color-secondary: #ff00cc; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Averia Sans Libre", cursive;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  background: var(--color-secondary);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, var(--color-primary), var(--color-secondary));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, var(--color-primary), var(--color-secondary));
+  min-height: 100vh; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  padding: 0 3rem;
+  text-align: center; }
+
+.profile {
+  display: flex;
+  justify-content: center; }
+  .profile__img {
+    padding: 10rem 0 3rem 0; }
+    .profile__img img {
+      width: 30rem;
+      height: 35rem; }
+
+.bio {
+  padding: 2rem 0;
+  font-size: 3rem; }
+
+.tools {
+  font-size: 2rem;
+  padding: 2rem 0; }
+  .tools img {
+    padding: 2rem; }
+
+.contact {
+  font-size: 2rem;
+  padding: 2rem; }
+
+.logo {
+  height: 3.25rem; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+.user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%; }

@@ -1,0 +1,42 @@
+:root {
+  // This is the same as html element but has higher specifity
+  /**
+     * Below are css variables supported natively in the browser
+     */
+  --color-primary: #333399;
+  --color-secondary: #ff00cc;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+  font-family: "Averia Sans Libre", cursive;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  background: var(--color-secondary); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    var(--color-primary),
+    var(--color-secondary)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  min-height: 100vh;
+}
